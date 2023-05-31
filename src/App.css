@@ -8,6 +8,10 @@ body {
   border-bottom: 4px solid var(--Color-Highlight-Light);
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 a {
   color: unset;
   text-decoration: none;
@@ -20,6 +24,38 @@ a {
 .scale-up-center {
   -webkit-animation: scale-up-center 0.4s cubic-bezier(0.39, 0.575, 0.565, 1) both;
   animation: scale-up-center 0.4s cubic-bezier(0.39, 0.575, 0.565, 1) both;
+}
+
+.form__padding {
+  padding: 2rem;
+}
+
+button.lemon-btn {
+  font-family: var(--Font-Secondary);
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 23px;
+
+  padding: 10px;
+  width: 165px;
+  height: 45px;
+
+  background: var(--Color-Primary-Light);
+  border-radius: 10px;
+
+  outline: none;
+  border: none;
+  cursor: pointer;
+
+  transition: all 0.2s ease-in-out;
+}
+
+button:is(:hover, :focus) {
+  transform: translateY(-1px);
+}
+
+button:active {
+  transform: translateY(1px);
 }
 
 @media screen and (max-width: 1400px) {

@@ -16,7 +16,7 @@ function App() {
       {isLoading ? (
         <Loader />
       ) : (
-        <div>
+        <div id="home">
           <Navbar />
           <Hero />
           <Highlights />

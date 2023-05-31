@@ -28,7 +28,9 @@ const Highlights = () => {
     <div className="lemon__highlights section__padding">
       <div className="lemon__highlights-head">
         <h1>This weeks specials</h1>
-        <button>Online Menu</button>
+        <button className="lemon-btn" style={{ height: "55px" }}>
+          Online Menu
+        </button>
       </div>
       <div className="lemon__highlights-specials">
         {content.map((items, index) => (

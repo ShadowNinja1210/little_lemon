@@ -42,34 +42,6 @@
   letter-spacing: 0.01em;
 }
 
-.lemon__hero-text button {
-  font-family: var(--Font-Secondary);
-  font-weight: 700;
-  font-size: 20px;
-  line-height: 23px;
-  padding: 10px;
-
-  width: 165px;
-  height: 44px;
-
-  background: #f4ce14;
-  border-radius: 10px;
-
-  outline: none;
-  border: none;
-  cursor: pointer;
-
-  transition: all 0.2s ease-in-out;
-}
-
-.lemon__hero-text button:hover {
-  transform: translateY(-1px);
-}
-
-.lemon__hero-text button:active {
-  transform: translateY(1px);
-}
-
 .lemon__hero-image {
   display: flex;
   justify-content: flex-end;

@@ -11,34 +11,6 @@
   line-height: 65px;
 }
 
-.lemon__highlights-head button {
-  padding: 10px;
-  width: 162px;
-  height: 55px;
-
-  background: var(--Color-Primary-Light);
-  border-radius: 10px;
-
-  outline: none;
-  border: none;
-  cursor: pointer;
-
-  font-family: var(--Font-Secondary);
-  font-weight: 700;
-  font-size: 20px;
-  line-height: 23px;
-
-  transition: all 0.2s ease-in-out;
-}
-
-.lemon__highlights-head button:hover {
-  transform: translateY(-1px);
-}
-
-.lemon__highlights-head button:active {
-  transform: translateY(1px);
-}
-
 .lemon__highlights-specials {
   display: grid;
   grid-template-columns: repeat(3, 260px);

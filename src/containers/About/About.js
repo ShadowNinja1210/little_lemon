@@ -3,7 +3,7 @@ import about from "../../assets/About.png";
 
 const About = () => {
   return (
-    <div className="lemon__about section__padding">
+    <div className="lemon__about section__padding" id="about">
       <div className="lemon__about-text">
         <div className="lemon__about-text_top">
           <h1>Little Lemon</h1>
