@@ -6,13 +6,13 @@
   width: 100%;
   background: white;
   position: sticky;
+  z-index: 999;
 }
 
 .lemon__navbar-image {
   justify-content: flex-start;
   align-items: center;
-  /* width: 30%;
-  margin-right: 4rem; */
+  cursor: pointer;
 }
 
 .lemon__navbar-links {

@@ -7,6 +7,7 @@ export const BookingProvider = ({ children }) => {
 
   const updateBookingData = (data) => {
     setBookingData(data);
+    console.log(bookingData);
   };
 
   return <BookingContext.Provider value={{ bookingData, updateBookingData }}>{children}</BookingContext.Provider>;

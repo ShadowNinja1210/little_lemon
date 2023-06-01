@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import { Navbar, Loader } from "./components";
 import { About, Footer, Hero, Highlights, Testimonials } from "./containers";
-import "./app.css";
+import "./App.css";
 
 function App() {
   const [isLoading, setIsLoading] = useState(true);
@@ -11,6 +11,7 @@ function App() {
       setIsLoading(false);
     }, 3000);
   }, []);
+
   return (
     <div>
       {isLoading ? (

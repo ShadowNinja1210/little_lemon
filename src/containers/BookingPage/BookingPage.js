@@ -3,6 +3,7 @@ import { BookingForm, FinalPage, Navbar, PaymentForm, ReviewPage } from "../../c
 import "./booking-page.css";
 import "./steps.css";
 import { ReactComponent as Intersect } from "../../assets/intersect.svg";
+import { BookingProvider } from "./BookingContext";
 
 const Steps = ({ num, name, status, isActive }) => {
   const statusClass = status ? "completed" : "steps";
@@ -68,15 +69,17 @@ const BookingPage = () => {
 
   return (
     <div>
-      <Navbar />
-      <div className="lemon__booking section__padding">
-        <div className="lemon__booking-top">
-          <Steps num="1" name="Reservation" status={activeStep >= 1} isActive={activeStep === 0} />
-          <Steps num="2" name="Review" status={activeStep >= 2} isActive={activeStep === 1} />
-          <Steps num="3" name="Payment" status={activeStep >= 3} isActive={activeStep === 2} />
+      <BookingProvider>
+        <Navbar />
+        <div className="lemon__booking section__padding">
+          <div className="lemon__booking-top">
+            <Steps num="1" name="Reservation" status={activeStep >= 1} isActive={activeStep === 0} />
+            <Steps num="2" name="Review" status={activeStep >= 2} isActive={activeStep === 1} />
+            <Steps num="3" name="Payment" status={activeStep >= 3} isActive={activeStep === 2} />
+          </div>
+          <div className="lemon__booking-forms">{renderComponent()}</div>
         </div>
-        <div className="lemon__booking-forms">{renderComponent()}</div>
-      </div>
+      </BookingProvider>
     </div>
   );
 };

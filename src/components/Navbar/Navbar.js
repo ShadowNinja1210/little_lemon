@@ -2,6 +2,7 @@ import "./navbar.css";
 import logo from "../../assets/Logo.svg";
 import { RiMenu3Line, RiCloseLine } from "react-icons/ri";
 import { useState } from "react";
+import { Link } from "react-router-dom";
 
 const Menu = () => {
   return (
@@ -16,7 +17,7 @@ const Menu = () => {
         <a href="#highlights">Menu</a>
       </p>
       <p>
-        <a href="#reservations">Reservations</a>
+        <a href="/booking">Reservations</a>
       </p>
       <p>
         <a href="#order">Order Online</a>
@@ -31,8 +32,10 @@ const Menu = () => {
 const Navbar = () => {
   const [toggleMenu, setToggleMenu] = useState(false);
   return (
-    <div className="lemon__navbar section__padding">
-      <img className="lemon__navbar-image" src={logo} alt="logo" />
+    <nav className="lemon__navbar section__padding">
+      <Link to="/">
+        <img className="lemon__navbar-image" src={logo} alt="logo" />
+      </Link>
       <div className="lemon__navbar-links">
         <Menu />
       </div>
@@ -46,7 +49,7 @@ const Navbar = () => {
           </div>
         )}
       </div>
-    </div>
+    </nav>
   );
 };
 

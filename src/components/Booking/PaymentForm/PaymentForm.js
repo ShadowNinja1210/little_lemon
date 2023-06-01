@@ -69,7 +69,7 @@ const PaymentForm = ({ onBack, onNext }) => {
             <hr />
             <div>
               <p>Amount to be paid</p>
-              <p>Rs. 450</p>
+              <p style={{ fontWeight: "800" }}>Rs. 450</p>
             </div>
           </article>
         </section>

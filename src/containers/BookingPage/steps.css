@@ -58,3 +58,25 @@
     color: #000000;
   }
 }
+
+@media screen and (max-width: 600px) {
+  .steps__diamond {
+    transform: rotate(45deg);
+    width: 36px;
+    height: 36px;
+  }
+
+  .steps__diamond p {
+    font-size: 30px;
+    line-height: 26px;
+    text-align: center;
+  }
+
+  .name {
+    padding-top: 1rem;
+    font-family: var(--Font-Primary);
+    font-size: 25px;
+    line-height: 25px;
+    text-align: center;
+  }
+}
