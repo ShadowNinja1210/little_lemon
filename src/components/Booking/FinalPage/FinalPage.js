@@ -1,7 +1,6 @@
 import { ReactSVG } from "react-svg";
 import "./final-page.css";
 import "../../Booking/booking.css";
-import { ReactComponent as Success } from "../../../assets/success.svg";
 import { Link } from "react-router-dom";
 import success from "../../../assets/success.svg";
 
