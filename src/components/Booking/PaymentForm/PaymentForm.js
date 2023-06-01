@@ -1,3 +1,5 @@
+import { useContext } from "react";
+import { BookingContext } from "../../../containers/BookingPage/BookingContext";
 import "./payment-form.css";
 import "../../Booking/booking.css";
 import { ReactComponent as GooglePay } from "../../../assets/google_pay.svg";
@@ -5,6 +7,14 @@ import { ReactComponent as PhonePe } from "../../../assets/phone_pe.svg";
 import { ReactComponent as Paytm } from "../../../assets/paytm.svg";
 
 const PaymentForm = ({ onBack, onNext }) => {
+  const { bookingData } = useContext(BookingContext);
+  const bill = {
+    charges: 100,
+    guests: bookingData.guests,
+    totalCharge: 100 * bookingData.guests,
+    discount: 10 * bookingData.guests,
+    total: 100 * bookingData.guests - 10 * bookingData.guests,
+  };
   return (
     <div>
       <h1 className="lemon__booking-forms-heading">Payments Selection</h1>
@@ -47,29 +57,29 @@ const PaymentForm = ({ onBack, onNext }) => {
           <h4>Payment Details</h4>
           <div>
             <p>Reservation Charge</p>
-            <p>Rs. 100</p>
+            <p>Rs. {bill.charges}</p>
           </div>
 
           <div>
             <p>No. of Guests</p>
-            <p>5</p>
+            <p>{bill.guests}</p>
           </div>
 
           <div>
             <p>Total Charges</p>
-            <p>Rs. 500</p>
+            <p>Rs. {bill.totalCharge}</p>
           </div>
 
           <div>
             <p>Discount</p>
-            <p>-Rs. 50</p>
+            <p>-Rs. {bill.discount}</p>
           </div>
 
           <article>
             <hr />
             <div>
               <p>Amount to be paid</p>
-              <p style={{ fontWeight: "800" }}>Rs. 450</p>
+              <p style={{ fontWeight: "800" }}>Rs. {bill.total}</p>
             </div>
           </article>
         </section>
