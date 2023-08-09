@@ -7,9 +7,11 @@ import { Link } from "react-router-dom";
 const Menu = () => {
   return (
     <>
-      <p>
-        <a href="/home">Home</a>
-      </p>
+      <Link to="/home">
+        <p>
+          <a href="#">Home</a>
+        </p>
+      </Link>
       <p>
         <a href="#about">About</a>
       </p>
