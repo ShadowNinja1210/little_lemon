@@ -3,7 +3,7 @@ import "../../Booking/booking.css";
 import { ReactComponent as Lemon } from "../../../assets/Logo_lemon.svg";
 import table from "../../../assets/table.jpg";
 import { useContext } from "react";
-import { BookingContext } from "../../../containers/BookingPage/BookingContext";
+import { BookingContext } from "../../../pages/BookingPage/BookingContext";
 
 const ReviewPage = ({ onBack, onNext }) => {
   const { bookingData } = useContext(BookingContext);

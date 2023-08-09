@@ -43,10 +43,6 @@ button.lemon-btn {
   background: var(--Color-Primary-Light);
   border-radius: 10px;
 
-  outline: none;
-  border: none;
-  cursor: pointer;
-
   transition: all 0.2s ease-in-out;
 }
 
@@ -56,6 +52,12 @@ button:is(:hover, :focus) {
 
 button:active {
   transform: translateY(1px);
+}
+
+button {
+  outline: none;
+  border: none;
+  cursor: pointer;
 }
 
 @media screen and (max-width: 1400px) {

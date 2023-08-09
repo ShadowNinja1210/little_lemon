@@ -3,7 +3,7 @@ import { useContext, useState } from "react";
 import { ReactSVG } from "react-svg";
 import "./booking-form.css";
 import "../../Booking/booking.css";
-import { BookingContext } from "../../../containers/BookingPage/BookingContext";
+import { BookingContext } from "../../../pages/BookingPage/BookingContext";
 import * as yup from "yup";
 import { yupResolver } from "@hookform/resolvers/yup";
 import correct from "../../../assets/correct.svg";

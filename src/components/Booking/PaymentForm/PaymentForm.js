@@ -1,5 +1,5 @@
 import { useContext } from "react";
-import { BookingContext } from "../../../containers/BookingPage/BookingContext";
+import { BookingContext } from "../../../pages/BookingPage/BookingContext";
 import "./payment-form.css";
 import "../../Booking/booking.css";
 import { ReactComponent as GooglePay } from "../../../assets/google_pay.svg";

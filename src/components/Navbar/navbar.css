@@ -5,8 +5,8 @@
   align-items: center;
   width: 100%;
   background: white;
-  position: sticky;
-  z-index: 999;
+  padding-top: 1.5rem !important;
+  padding-bottom: 1.5rem !important;
 }
 
 .lemon__navbar-image {
@@ -15,14 +15,94 @@
   cursor: pointer;
 }
 
-.lemon__navbar-links {
+.lemon__navbar-btn_links {
+  gap: 2rem;
   display: flex;
   justify-content: flex-end;
   align-items: center;
 }
 
-.lemon__navbar-links p {
-  padding-left: 2rem;
+.lemon__navbar-links {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 2rem;
+}
+
+.login-btn {
+  display: flex;
+  width: 80px;
+  height: 36px;
+  outline: none;
+  border: none;
+  justify-content: center;
+  align-items: center;
+  color: #000;
+  text-align: center;
+  font-size: 20px;
+  font-family: Karla;
+  font-weight: 600;
+
+  border-radius: 10px;
+  background: var(--Color-Primary-Light);
+  cursor: pointer;
+}
+
+.login-loggedin {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  gap: 2rem;
+}
+
+.login-loggedin_user {
+  display: flex;
+  background: none;
+}
+
+.login-loggedin_user-svg {
+  fill: var(--Color-Primary) !important ;
+  height: 38px;
+  width: 38px;
+  cursor: pointer;
+}
+
+.login-loggedin_cart {
+  display: flex;
+  position: relative;
+  padding: 7px;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+
+  border-radius: 10px;
+  background: var(--Color-Highlight-Light);
+  cursor: pointer;
+}
+
+.login-loggedin_cart-svg {
+  fill: var(--Color-Primary);
+  width: 25px;
+  height: 21px;
+}
+
+.login-loggedin_cart-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  position: absolute;
+  top: -5px;
+  right: -5px;
+  width: 15px;
+  height: 15px;
+  border-radius: 100%;
+
+  color: var(--Color-Primary);
+  font-size: 14px;
+  font-family: var(--Font-Secondary);
+  font-weight: 700;
+  background-color: var(--Color-Primary-Light);
 }
 
 .lemon__navbar-menu_container p {
@@ -44,9 +124,9 @@
 }
 
 .lemon__navbar-menu {
-  margin-left: 1rem;
   display: none;
   position: relative;
+  order: -1;
 }
 
 .lemon__navbar-menu_container {
@@ -60,7 +140,7 @@
   padding: 2rem;
   position: absolute;
   top: 40px;
-  right: 0;
+  left: 0;
   margin-top: 1rem;
   min-width: 200px;
   border-radius: 16px;
@@ -73,8 +153,11 @@
 }
 
 @media screen and (max-width: 1180px) {
-  .lemon__navbar-links p {
-    padding-left: 1rem;
+  .lemon__navbar-links {
+    gap: 1rem;
+  }
+  .login-loggedin {
+    gap: 1rem;
   }
 
   .lemon__navbar-links a:any-link {
@@ -85,6 +168,9 @@
 @media screen and (max-width: 900px) {
   .lemon__navbar-menu {
     display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
   }
 
   .lemon__navbar-links {

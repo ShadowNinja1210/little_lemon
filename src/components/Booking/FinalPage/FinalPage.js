@@ -1,5 +1,5 @@
 import { useContext } from "react";
-import { BookingContext } from "../../../containers/BookingPage/BookingContext";
+import { BookingContext } from "../../../pages/BookingPage/BookingContext";
 import { Link } from "react-router-dom";
 import { ReactSVG } from "react-svg";
 import "./final-page.css";

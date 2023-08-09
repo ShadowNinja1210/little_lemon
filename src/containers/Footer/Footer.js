@@ -3,7 +3,7 @@ import logoWhite from "../../assets/Logo_white.svg";
 
 const Footer = () => {
   return (
-    <footer className="lemon__footer footer__padding section__padding">
+    <footer className="lemon__footer footer__padding section__padding" id="footer">
       {/* Logo */}
       <div className="lemon__footer-logo">
         <img src={logoWhite} alt="Little Lemon" />

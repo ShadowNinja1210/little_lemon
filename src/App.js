@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
-import { Navbar, Loader } from "./components";
-import { About, Footer, Hero, Highlights, Testimonials } from "./containers";
+import { Loader } from "./components";
+import Home from "./pages/Home/Home";
 import "./App.css";
 
 function App() {
@@ -12,22 +12,7 @@ function App() {
     }, 3000);
   }, []);
 
-  return (
-    <div>
-      {isLoading ? (
-        <Loader />
-      ) : (
-        <div id="home">
-          <Navbar />
-          <Hero />
-          <Highlights />
-          <Testimonials />
-          <About />
-          <Footer />
-        </div>
-      )}
-    </div>
-  );
+  return <div>{isLoading ? <Loader /> : <Home />}</div>;
 }
 
 export default App;

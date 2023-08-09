@@ -25,7 +25,7 @@ const content = [
 
 const Highlights = () => {
   return (
-    <div className="lemon__highlights section__padding">
+    <div className="lemon__highlights section__padding" id="highlights">
       <div className="lemon__highlights-head">
         <h1>This weeks specials</h1>
         <button className="lemon-btn" style={{ height: "55px" }}>
