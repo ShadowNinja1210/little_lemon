@@ -5,7 +5,7 @@ const Special = (props) => {
   return (
     <div className="lemon__highlights-specials_special">
       <div className="lemon__highlights-specials_special-image">
-        <img src={props.image} alt={props.name} />
+        <img src={props.image} alt={props.name} loading="lazy" />
       </div>
       <div className="lemon__highlights-specials_special-content">
         <div className="lemon__highlights-specials_special-content-top">

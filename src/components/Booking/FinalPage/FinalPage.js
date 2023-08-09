@@ -22,7 +22,7 @@ const FinalPage = () => {
         </p>
         <p>Get ready to indulge in a delightful dining experience! We have sent the reservation details to your email and mobile number. Enjoy your meal!</p>
       </section>
-      <Link to="/">
+      <Link to="/home">
         <button className="lemon-btn">Home</button>
       </Link>
     </div>

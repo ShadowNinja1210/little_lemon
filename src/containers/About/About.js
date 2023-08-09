@@ -10,11 +10,14 @@ const About = () => {
           <h4>Chicago</h4>
         </div>
         <div className="lemon__about-text_bottom">
-          <p>Little Lemon is a charming neighborhood bistro thatserves simple food and classic cocktails in a lively but casual environment. The restaurant features a locally-sourced menu with daily specials.</p>
+          <p>
+            Little Lemon is a charming neighborhood bistro thatserves simple food and classic cocktails in a lively but casual environment. The restaurant features a locally-sourced menu with daily
+            specials.
+          </p>
         </div>
       </div>
       <div className="lemon__about-image">
-        <img src={about} alt="restaurant" />
+        <img src={about} alt="restaurant" loading="lazy" />
       </div>
     </div>
   );

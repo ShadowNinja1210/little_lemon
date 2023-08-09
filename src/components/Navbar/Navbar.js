@@ -8,7 +8,7 @@ const Menu = () => {
   return (
     <>
       <p>
-        <a href="/">Home</a>
+        <a href="/home">Home</a>
       </p>
       <p>
         <a href="#about">About</a>
@@ -35,7 +35,7 @@ const Navbar = () => {
   const [toggleMenu, setToggleMenu] = useState(false);
   return (
     <nav className="lemon__navbar section__padding">
-      <Link to="/">
+      <Link to="/home">
         <img className="lemon__navbar-image" src={logo} alt="logo" />
       </Link>
       <div className="lemon__navbar-links">

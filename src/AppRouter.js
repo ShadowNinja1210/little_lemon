@@ -1,5 +1,6 @@
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import App from "./App";
+import Home from "./Home";
 import { BookingPage } from "./containers";
 
 const AppRouter = () => {
@@ -7,6 +8,7 @@ const AppRouter = () => {
     <Router>
       <Routes>
         <Route exact path="/" element={<App />} />
+        <Route exact path="/home" element={<Home />} />
         <Route path="/booking" element={<BookingPage />} />
       </Routes>
     </Router>
